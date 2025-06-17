@@ -2,18 +2,21 @@
 
 All notable changes to `hap-nodejs` will be documented in this file. This project tries to adhere to [Semantic Versioning](http://semver.org/).
 
-## v2.0.0 (Unreleased)
+## v2.0.0 (2025-06-17)
+
+### Breaking
+
+- ⚠️ drop support for node v18
+- ⚠️ republish as `@homebridge/hap-nodejs` for consistency
 
 ### Changes
 
-- ⚠️ drop support for node v18
   - the minimum node version required is now `v20`
 - update `commander` from `v13` to `v14`
 - Added support for NodeJS 24
 - Update @homebridge/ciao to 1.3.3
 - update `jest` to `v30` and required migration steps
 - update `eslint` to `v9` and required migration steps
-- ⚠️ republish as `@homebridge/hap-nodejs` for consistency
 
 ### Homebridge Dependencies
 
