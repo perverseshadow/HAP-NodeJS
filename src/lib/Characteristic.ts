@@ -526,9 +526,6 @@ export type CharacteristicSetHandler = (value: CharacteristicValue, context: Cha
  */
 export type AdditionalAuthorizationHandler = (additionalAuthorizationData: string | undefined) => boolean;
 
-/**
- * @group Characteristic
- */
 // eslint-disable-next-line @typescript-eslint/no-unsafe-declaration-merging
 export declare interface Characteristic {
 

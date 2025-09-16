@@ -350,9 +350,6 @@ export const enum AccessoryEventTypes {
   CHARACTERISTIC_WARNING = "characteristic-warning",
 }
 
-/**
- * @group Accessory
- */
 // eslint-disable-next-line @typescript-eslint/no-unsafe-declaration-merging
 export declare interface Accessory {
   on(event: "identify", listener: (paired: boolean, callback: VoidCallback) => void): this;

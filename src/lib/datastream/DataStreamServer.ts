@@ -210,9 +210,6 @@ export const enum DataStreamServerEvent {
   CONNECTION_CLOSED = "connection-closed",
 }
 
-/**
- * @group HomeKit Data Streams (HDS)
- */
 // eslint-disable-next-line @typescript-eslint/no-unsafe-declaration-merging
 export declare interface DataStreamServer {
   on(event: "connection-opened", listener: (connection: DataStreamConnection) => void): this;
@@ -540,9 +537,6 @@ export const enum DataStreamConnectionEvent {
   CLOSED = "closed",
 }
 
-/**
- * @group HomeKit Data Streams (HDS)
- */
 // eslint-disable-next-line @typescript-eslint/no-unsafe-declaration-merging
 export declare interface DataStreamConnection {
   on(event: "identification", listener: (frame: HDSFrame, callback: IdentificationCallback) => void): this;

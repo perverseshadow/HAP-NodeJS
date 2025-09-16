@@ -352,9 +352,6 @@ export const enum CameraControllerEvents {
   SPEAKER_PROPERTIES_CHANGED = "speaker-change",
 }
 
-/**
- * @group Camera
- */
 // eslint-disable-next-line @typescript-eslint/no-unsafe-declaration-merging
 export declare interface CameraController {
   on(event: "microphone-change", listener: (muted: boolean, volume: number) => void): this;

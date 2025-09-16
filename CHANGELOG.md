@@ -11,6 +11,7 @@ All notable changes to `hap-nodejs` will be documented in this file. This projec
 - fix types around buffers in test files
 - update hap characteristics and services
 - regenerate documentation (`typedoc`) files
+- docs: remove unnecessary `@group` tags on interface declarations
 
 ## v2.0.1 (2025-07-23)
 

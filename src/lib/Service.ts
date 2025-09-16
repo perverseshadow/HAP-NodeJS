@@ -129,9 +129,6 @@ export const enum ServiceEventTypes {
   CHARACTERISTIC_WARNING = "characteristic-warning",
 }
 
-/**
- * @group Service
- */
 // eslint-disable-next-line @typescript-eslint/no-unsafe-declaration-merging
 export declare interface Service {
   on(event: "characteristic-change", listener: (change: ServiceCharacteristicChange) => void): this;

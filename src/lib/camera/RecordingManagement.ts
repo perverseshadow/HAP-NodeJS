@@ -922,9 +922,6 @@ const enum CameraRecordingStreamEvents {
   CLOSED = "closed",
 }
 
-/**
- * @group Camera
- */
 // eslint-disable-next-line @typescript-eslint/no-unsafe-declaration-merging
 declare interface CameraRecordingStream {
   on(event: "closed", listener: () => void): this;
