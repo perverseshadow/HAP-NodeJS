@@ -145,6 +145,26 @@ All notable changes to `hap-nodejs` will be documented in this file. This projec
 - `@homebridge/ciao` @ `v1.3.0`
 - `bonjour-hap` @ `v3.8.0`
 
+## v0.14.1 (2026-02-07)
+
+### Changed
+
+- dependency updates
+- update release script for oidc releases
+
+## v0.14.0 (2025-10-29)
+
+### Changed
+
+- remove `treatWarningsAsErrors` flag from doc gen
+- updated dependencies, fix `Buffer` types
+- add node 24 to node engines in `package.json`
+
+### Homebridge Dependencies
+
+- `@homebridge/ciao` @ `v1.3.4`
+- `bonjour-hap` @ `v3.9.1`
+
 ## v0.13.1 (2025-06-04)
 
 *No changes since v0.13.0, just a version bump to trigger a new release.*
