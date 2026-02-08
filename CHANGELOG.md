@@ -2,7 +2,7 @@
 
 All notable changes to `hap-nodejs` will be documented in this file. This project tries to adhere to [Semantic Versioning](http://semver.org/).
 
-## v2.0.3 (Unreleased)
+## v2.1.0 (2026-02-08)
 
 ### Changes
 
@@ -11,6 +11,12 @@ All notable changes to `hap-nodejs` will be documented in this file. This projec
 - dependency updates
 - update hap characteristics and services
 - regenerate documentation (`typedoc`) files
+
+### Homebridge Dependencies
+
+- `@homebridge/ciao` @ `v1.3.5`
+- `@homebridge/dbus-native` @ `v0.7.3`
+- `bonjour-hap` @ `v3.10.0`
 
 ## v2.0.2 (2025-09-17)
 
@@ -23,11 +29,23 @@ All notable changes to `hap-nodejs` will be documented in this file. This projec
 - regenerate documentation (`typedoc`) files
 - docs: remove unnecessary `@group` tags on interface declarations
 
+### Homebridge Dependencies
+
+- `@homebridge/ciao` @ `v1.3.4`
+- `@homebridge/dbus-native` @ `v0.7.2`
+- `bonjour-hap` @ `v3.9.1`
+
 ## v2.0.1 (2025-07-23)
 
 ### Changes
 
 - dependency updates
+
+### Homebridge Dependencies
+
+- `@homebridge/ciao` @ `v1.3.4`
+- `@homebridge/dbus-native` @ `v0.7.2`
+- `bonjour-hap` @ `v3.9.1`
 
 ## v2.0.0 (2025-06-17)
 
