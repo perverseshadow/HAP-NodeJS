@@ -308,7 +308,7 @@ for (const [id, definition] of Object.entries(characteristics)) {
       writtenCharacteristicEntries[deprecatedClassName] = generatedCharacteristic;
     }
   } catch (error) {
-    throw new Error("Error thrown generating characteristic '" + id + "' (" + definition.DefaultDescription + "): " + error.message);
+    throw new Error("Error thrown generating characteristic '" + id + "' (" + definition.DefaultDescription + "): " + error.message, { cause: error });
   }
 }
 
@@ -400,7 +400,7 @@ for (const generated of Object.values(generatedCharacteristics)
     }
     characteristicOutput.write("Characteristic." + generated.className + " = " + generated.className + ";\n\n");
   } catch (error) {
-    throw new Error("Error thrown writing characteristic '" + generated.id + "' (" + generated.className + "): " + error.message);
+    throw new Error("Error thrown writing characteristic '" + generated.id + "' (" + generated.className + "): " + error.message, { cause: error });
   }
 }
 
@@ -492,7 +492,7 @@ for (const [id, definition] of Object.entries(services)) {
       writtenServiceEntries[deprecatedClassName] = generatedService;
     }
   } catch (error) {
-    throw new Error("Error thrown generating service '" + id + "' (" + definition.DefaultDescription + "): " + error.message);
+    throw new Error("Error thrown generating service '" + id + "' (" + definition.DefaultDescription + "): " + error.message, { cause: error });
   }
 }
 
@@ -563,7 +563,7 @@ for (const generated of Object.values(generatedServices)
     }
     serviceOutput.write("Service." + generated.className + " = " + generated.className + ";\n\n");
   } catch (error) {
-    throw new Error("Error thrown writing service '" + generated.id + "' (" + generated.className + "): " + error.message);
+    throw new Error("Error thrown writing service '" + generated.id + "' (" + generated.className + "): " + error.message, { cause: error });
   }
 }
 

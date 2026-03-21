@@ -1159,12 +1159,14 @@ class CameraRecordingStream extends EventEmitter implements DataStreamProtocolHa
     this.connection.removeListener(DataStreamConnectionEvent.CLOSED, this.closeListener);
 
     if (this.generator) {
-      // Signal the generator to terminate via the async generator protocol. The return is queued and takes effect after the generator's current await completes.
-      // Combined with the AbortSignal above, this ensures the generator terminates promptly even if the delegate doesn't check the signal. We catch rejections
+      // Signal the generator to terminate via the async generator protocol. The return is queued and takes effect
+      // after the generator's current await completes. Combined with the AbortSignal above, this ensures the
+      // generator terminates promptly even if the delegate doesn't check the signal. We catch rejections
       // to prevent unhandled promise warnings if the generator's cleanup throws.
-      // @ts-expect-error: AsyncGenerator.return() requires a value parameter, but we're signaling termination — no meaningful RecordingPacket to provide.
+      // @ts-expect-error: AsyncGenerator.return() requires a value parameter, but we're signaling termination.
       void this.generator.return().catch((error: Error) =>
-        debug("[HDS %s] Error while closing recording generator for stream %d: %s", this.connection.remoteAddress, this.streamId, error.stack ?? String(error)));
+        debug("[HDS %s] Error while closing recording generator for stream %d: %s",
+          this.connection.remoteAddress, this.streamId, error.stack ?? String(error)));
 
       // when this variable is defined, the generator hasn't returned yet.
       // we start a timeout to uncover potential programming mistakes where we await forever and can't free resources.

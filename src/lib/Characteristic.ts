@@ -2731,7 +2731,7 @@ export class Characteristic extends EventEmitter {
       const numericMin = maxWithUndefined(this.props.minValue, numericLowerBound(this.props.format));
       let numericMax = minWithUndefined(this.props.maxValue, numericUpperBound(this.props.format));
 
-      let stepValue: number | undefined = undefined;
+      let stepValue: number | undefined;
       if (this.props.format === Formats.FLOAT) {
         stepValue = this.props.minStep;
       } else {

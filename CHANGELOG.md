@@ -1,6 +1,19 @@
 # Change Log
 
-All notable changes to `hap-nodejs` will be documented in this file. This project tries to adhere to [Semantic Versioning](http://semver.org/).
+All notable changes to `@homebridge/hap-nodejs` will be documented in this file. This project tries to adhere to [Semantic Versioning](http://semver.org/).
+
+## v2.1.1 (Pending Release)
+
+### Changes
+
+- Improvement: HKSV recording stream AbortSignal support and graceful generator termination. (#1111) (@hjdhjd)
+- dependency updates + fix code from new lint rules
+
+### Homebridge Dependencies
+
+- `@homebridge/ciao` @ `v1.3.5`
+- `@homebridge/dbus-native` @ `v0.7.3`
+- `bonjour-hap` @ `v3.10.0`
 
 ## v2.1.0 (2026-02-08)
 
@@ -162,6 +175,14 @@ All notable changes to `hap-nodejs` will be documented in this file. This projec
 
 - `@homebridge/ciao` @ `v1.3.0`
 - `bonjour-hap` @ `v3.8.0`
+
+## v0.14.2 (2026-03-21)
+
+### Changed
+
+- Improvement: HKSV recording stream AbortSignal support and graceful generator termination. (#1111) (@hjdhjd)
+- dependency updates
+- regenerate documentation for new version
 
 ## v0.14.1 (2026-02-07)
 
