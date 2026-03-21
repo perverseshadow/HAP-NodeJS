@@ -8,6 +8,7 @@ All notable changes to `@homebridge/hap-nodejs` will be documented in this file.
 
 - Improvement: HKSV recording stream AbortSignal support and graceful generator termination. (#1111) (@hjdhjd)
 - dependency updates + fix code from new lint rules
+- regenerate documentation (`typedoc`) files
 
 ### Homebridge Dependencies
 

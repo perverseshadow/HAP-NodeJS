@@ -17,6 +17,11 @@ const config = {
   "excludeExternals": true,
   "hideGenerator": true,
   "includeVersion": false,
+  "externalSymbolLinkMappings": {
+    "@types/node": {
+      "__global.AbortSignal": "https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal"
+    }
+  },
   "validation": {
     "invalidLink": true,
     "notExported": false,
