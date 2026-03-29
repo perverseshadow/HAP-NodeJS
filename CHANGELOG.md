@@ -7,12 +7,13 @@ All notable changes to `@homebridge/hap-nodejs` will be documented in this file.
 ### Changes
 
 - chore: update hap characteristics and services
+- dependency updates
 
 ### Homebridge Dependencies
 
-- `@homebridge/ciao` @ `v1.3.5`
-- `@homebridge/dbus-native` @ `v0.7.3`
-- `bonjour-hap` @ `v3.10.0`
+- `@homebridge/ciao` @ `v1.3.6`
+- `@homebridge/dbus-native` @ `v0.7.4`
+- `bonjour-hap` @ `v3.10.1`
 
 ## v2.1.1 (2026-03-21)
 
@@ -188,6 +189,13 @@ All notable changes to `@homebridge/hap-nodejs` will be documented in this file.
 
 - `@homebridge/ciao` @ `v1.3.0`
 - `bonjour-hap` @ `v3.8.0`
+
+## v0.14.3 (2026-03-29)
+
+### Changed
+
+- dependency updates
+- regenerate documentation for new version
 
 ## v0.14.2 (2026-03-21)
 
