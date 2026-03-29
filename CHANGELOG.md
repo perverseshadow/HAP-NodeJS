@@ -2,7 +2,7 @@
 
 All notable changes to `@homebridge/hap-nodejs` will be documented in this file. This project tries to adhere to [Semantic Versioning](http://semver.org/).
 
-## v2.1.1 (Pending Release)
+## v2.1.2 (2026-03-29)
 
 ### Changes
 
