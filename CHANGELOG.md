@@ -8,6 +8,7 @@ All notable changes to `@homebridge/hap-nodejs` will be documented in this file.
 
 - chore: update hap characteristics and services
 - dependency updates
+- regenerate documentation (`typedoc`) files
 
 ### Homebridge Dependencies
 
